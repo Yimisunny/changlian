@@ -1,0 +1,47 @@
+.prompt,.type,.remarks{
+  background: #fff;
+  width: 100%;
+  padding: 20rpx 40rpx;
+  box-sizing: border-box;
+}
+.prompt{
+  height: 300rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20rpx;
+}
+.type{
+  height: 100rpx;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remarks{
+  flex: 1;
+  margin-top: 30rpx;
+  padding: 0;
+}
+.right{
+  font-size: 35rpx;
+  color: #ccc;
+}
+.rt{
+  border-bottom: 2rpx solid #ccc;
+}
+.enter{
+  width:60rpx;
+  height: 60rpx;
+  transform: rotate(-45deg);
+}
+.weui-media-box__title{
+  display: flex;
+}
+.weui-media-box__bd{
+  text-align: center;
+}
+.money{
+  font-size: 45rpx;
+  font-weight: bolder;
+}

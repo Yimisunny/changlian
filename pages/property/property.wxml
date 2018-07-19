@@ -1,0 +1,36 @@
+<!--pages/property/property.wxml-->
+<view class='container'>
+  <view class='sel'>
+    <view class='head'>
+      <navigator url='../record/record'><image class='img' src='../../images/property/record.png'></image></navigator>
+      <view class='balance'>
+        <text style='font-size:90rpx;font-weight: 500;color:#fff;'>{{balance}}</text>
+        <text style='font-size:30rpx;color:#fff;'>当前账户余额(BTC)</text>
+      </view>
+    </view>
+    <view class='deal'>
+      <view class='carry' bindtap='carry'>
+        <view class='pen'>
+          <image src='../../images/property/transfer.png' class='imgStyle'></image>
+        </view>
+        <text>转账</text>
+      </view>
+      <view class='carry' bindtap='collection'>
+        <view class='pen'>
+          <image src='../../images/property/getMoney.png' class='imgStyle'></image>
+        </view>
+        <text>收款</text>
+      </view>
+    </view>
+    
+  </view>
+  <view class="split">
+  </view>
+  <view class='income'>
+    <navigator class='regard' url='../launch/launch'></navigator>
+    <text class='incomeTit'>今日收益</text>
+    <view class='canvas'>
+      <ec-canvas  id="mychart-dom-bar" style="width: 100%; height: auto;" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+    </view>
+  </view>
+</view>

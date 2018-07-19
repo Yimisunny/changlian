@@ -1,0 +1,93 @@
+.save {
+  color: #fff;
+  background:linear-gradient(to left,#f75523,orange);
+  padding: 16rpx 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 38rpx;
+  border-radius: 10rpx;
+}
+.wallets-password {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+.wallets-password .input-content-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  display: flex;
+  flex-direction: column;
+  width: 600rpx;
+  height: 350rpx;
+  margin:0 auto;
+  margin-top: 160rpx;
+  background: #fff;
+  border-radius: 20rpx;
+}
+.top {
+  display: flex;
+  align-items: center;
+  height: 40rpx;
+  padding:0 20rpx;
+  justify-content: center;
+}
+.close {
+  width: 100%;
+  padding-right: 20rpx;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 50rpx;
+  color: #999;
+  font-weight: bolder;
+}
+.forget {
+  width: 100%;
+  font-size: 30rpx;
+  text-align: center;
+  padding-bottom: 20rpx;
+}
+.wallets-password .input-content-wrap .input-password-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150rpx;
+}
+.wallets-password .input-content-wrap .input-password-wrap .password_dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  box-sizing: border-box;
+  width: 90rpx;
+  height: 90rpx;
+  border: 2rpx solid #ddd;
+  border-left: none 0;
+}
+.wallets-password .input-content-wrap .input-password-wrap .password_dot:nth-child(1) {
+  border-left: 2rpx solid #ddd;
+}
+.wallets-password .input-content-wrap .input-password-wrap .password_dot i {
+  background: #000;
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+}
+.wallets-password .input-content {
+  position: absolute;
+  opacity: 0;
+  left: -100%;
+  top: 600rpx;
+  background: #f56;
+  z-index: -999;
+}
+.wallets-password .input-content.active {
+  z-index: -99;
+}

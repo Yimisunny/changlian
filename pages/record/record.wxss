@@ -1,0 +1,11 @@
+.weui-media-box_appmsg{
+  width: 100%;
+  padding: 30rpx 30rpx;
+  border-bottom: 2rpx solid #ccc;
+  box-sizing: border-box;
+}
+.enter{
+  width:60rpx;
+  height: 60rpx;
+  transform: rotate(-45deg);
+}

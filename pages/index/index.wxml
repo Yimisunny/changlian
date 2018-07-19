@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='tit'>
+    <text class='h1'>登录{{openid}}</text>
+  </view>
+  <view class='main'>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd" style="width: 90px">
+          <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+            <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+          </picker>
+        </view>
+        <input class="weui-input" placeholder="请输入号码" bindinput ="userNameInput" value="{{account.num}}"/>
+      </view>
+    </view> 
+    <view class="weui-cells weui-cells_after-title" style='padding:20rpx 30rpx; margin-top:40rpx;'>
+      <view class="weui-cell weui-cell_select">
+        <input type='password' placeholder='请输入密码' name="{{account.password}}"/>
+      </view>
+    </view>
+    <navigator class='forget' url='../shou/shou'>忘记密码？</navigator>
+    <button class='btn' bindtap='enter'>下一步</button>
+    <navigator class='forget' url='../registe/registe'>尚无账号，去注册</navigator>
+  </view>
+</view>

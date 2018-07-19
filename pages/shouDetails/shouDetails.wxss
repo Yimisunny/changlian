@@ -1,0 +1,58 @@
+.top,.bottom{
+  width: 100%;
+  height: 48%;
+  margin-top: 2%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.tit{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.thread{
+  width: 10rpx;
+  height: 55rpx;
+  background: #555;
+  margin-right: 10rpx;
+}
+.ul{
+  width: 100%;
+  height: auto;
+  background: #eee;
+}
+.uls{
+  width: 80%;
+  height: 76%;
+  background: #eee;
+  margin: 0 auto;
+  margin-top: 40rpx;
+}
+.li{
+  width:100%;
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #ccc;
+}
+.weui-media-box__desc{
+  margin-top: 20rpx;
+  color:#999;
+  font-size:13px;
+  line-height:1.2;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+.title{
+  display: block;
+  width: 100%;
+  background: #eee;
+  padding: 20rpx;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,24 @@
+.sel{
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #eee;
+}
+.changebox{
+  padding: 0 20px;
+  margin-top: 10px;
+}
+label{
+  font-size: 15px;
+}
+input{
+  padding: 17rpx;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  margin: 5px 0 10px 0;
+}
+button{
+  margin-top: 100rpx;
+  color: #fff;
+  width: 90%;
+  background:linear-gradient(to left,#f75523,orange);
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我授权的内容",
+  "usingComponents": {
+    "content": "../../components/content/content"
+  }
+}

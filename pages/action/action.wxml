@@ -1,0 +1,34 @@
+<view class='sle'>
+  <view class='child'>
+    <view class='h1'>
+      长链钱包空投10W LTC
+    </view>
+    <view class='h2'>
+      呼朋唤友来瓜分
+    </view>
+    <view class='imgs'>
+      <image class='img' src='../../images/about/u1339.png'></image>
+    </view>
+    <button class='btn' bindtap="openAlert" open-type='getUserInfo'>分享</button>
+  </view>
+  <canvas canvas-id='share' style='width:100vw;height:90vh;' hidden='{{canvasHidden}}'></canvas> 
+  <!--弹出框 -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">  
+    <text style='color:#eee;font-size:35rpx;'>分享到</text>
+    <view class='pol'>
+      <view>
+        <image src='../../images/about/u1339.png'></image>
+        <button open-type="share" hover-class="other-button-hover" class='fen'>微信</button>
+      </view>
+      <view>
+        <image src='../../images/about/u1339.png'></image>
+        <button open-type="share" hover-class="other-button-hover" class='fen'>朋友圈</button>
+      </view>
+      <view>
+        <image src='../../images/about/u1339.png'></image>
+        <button class='fen' bindtap='saveImageToPhotosAlbum'>保存图片</button>
+      </view>
+    </view>
+    <view style='font-weight: bold;margin-top:20rpx;' bindtap="hideModal">取消分享</view>
+  </view>
+</view>

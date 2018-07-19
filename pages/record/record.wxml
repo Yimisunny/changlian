@@ -1,0 +1,24 @@
+<view class='container'>
+  <view style='width:100%;height:100%;'>
+    <navigator bindtap='nav' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg enter">
+        <image class="weui-media-box__thumb" src="../../images/transaction/u248.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">收款</view>
+        <view class="weui-media-box__desc">6小时前</view>
+      </view>
+      <view>+14.814212 PST</view>
+    </navigator>
+    <navigator bindtap='nav' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg enter">
+        <image class="weui-media-box__thumb" src="../../images/transaction/u254.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">支出</view>
+        <view class="weui-media-box__desc">6小时前</view>
+      </view>
+      <view>-14.814212 PST</view>
+    </navigator>
+  </view>
+</view>

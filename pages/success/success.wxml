@@ -1,0 +1,4 @@
+<view style='text-align:center;'>
+  <view>你已成功转给张三{{money}}PST</view>  
+  <view>{{time}}s后系统将自动返回资产页</view>
+</view>

@@ -1,0 +1,30 @@
+<view class='container' style='justify-content: flex-strat;'>
+  <button bindtap='cha'>查询余额</button>
+  <view class='share'>
+    <text class='h1'>{{name}}hfgd</text>
+    <text class='h2'>给您发送了糖包</text>
+    <view class='shareClick'>
+      <button class='sharec' bindtap='open' open-type='getUserInfo' wx:if="{{!bool}}">打开</button>
+      <button class='sharec' bindtap="openAlert" open-type='getUserInfo' wx:else>分享</button>
+    </view>
+  </view>
+  <!--弹出框 -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">  
+    <text style='color:#eee;font-size:35rpx;'>分享到</text>
+    <view class='pol'>
+      <view bindtap='sharew'>
+        <image src='../../images/about/u1339.png'></image>
+        <button open-type="share" hover-class="other-button-hover" class='fen'>微信</button>
+      </view>
+      <view>
+        <image src='../../images/about/u1339.png'></image>
+        <text>朋友圈</text>
+      </view>
+      <view>
+        <image src='../../images/about/u1339.png'></image>
+        <text>复制链接</text>
+      </view>
+    </view>
+    <text style='font-weight: bold;margin-top:20rpx;' bindtap="hideModal">取消分享</text>
+  </view>
+</view>

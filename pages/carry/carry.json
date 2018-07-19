@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "转账",
+  "usingComponents":{
+    "pay": "../../components/pay/pay"
+  }
+}

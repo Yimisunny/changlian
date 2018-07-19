@@ -1,0 +1,10 @@
+<view class='sel'>
+  <view class='h1'>
+    <text>输入验证码</text>
+  </view>
+  <view class='h4'>
+    <text>验证码已发送，请注意接收</text>
+  </view>
+  <verifycode url="../index/index"></verifycode>
+  <button class='btn'>重新获取</button>
+</view>

@@ -1,0 +1,29 @@
+<!--logs.wxml-->
+<view class="container" style='background:#eee;'>
+  <view class='sel'>
+    <navigator class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" url='../original/original'>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title box_title">我原创的内容</view>
+      </view>
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg img">
+        <image class="weui-media-box__thumb" src="../../images/content/right.png" />
+      </view>
+    </navigator>
+    <navigator bindtap='nav' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" url="../shouContent/content">
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title box_title">我授权的内容</view>
+      </view>
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg img">
+        <image class="weui-media-box__thumb" src="../../images/content/right.png" />
+      </view>
+    </navigator>
+    <navigator bindtap='nav' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active" url='../transfer/transfer'>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title box_title">我转载的内容</view>
+      </view>
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg img">
+        <image class="weui-media-box__thumb" src="../../images/content/right.png" />
+      </view>
+    </navigator>
+  </view>
+</view>

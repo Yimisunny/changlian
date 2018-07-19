@@ -1,0 +1,26 @@
+<view class='container'>
+  <view class='sel'>
+    <view class='dai'>
+      <text>代币总量</text>
+      <view style='display:flex;width:35%;align-items: center;'>
+        <input type='text' placeholder='0.000000' bindinput='chang' name="{{price.totalMoney}}" value="{{price.totalMoney}}" class='inp'/>
+        <text>枚</text>
+      </view>
+    </view>
+    <view class='change' wx:if="{{bool}}">每个人抽取到的固定金额，<text bindtap='change'>改为拼手气红包</text></view> 
+    <view class='change' wx:else>每个人抽取到的金额随机，<text bindtap='change'>改为普通红包</text></view> 
+    <view class='dai'>
+      <text>糖包个数</text>
+      <view style='display:flex;width:35%;align-items: center;'>
+        <input type='text' placeholder='填写个数' value="{{price.number}}" bindinput='num' class='inp'/>
+        <text>个</text>
+      </view>
+    </view>
+    <view class='dai'>
+      <text>留言</text>
+      <input type='text' placeholder='恭喜发财，大吉大利' bindinput='extra' value="{{price.extraInfo}}" class='inp' style='width:78%;'/>
+    </view>
+    <text class='money'><text class='h1'>{{price.totalMoney}}</text>pst</text>
+    <pay style="margin-top: 80rpx;display:block;" btn="塞钱进糖包" url="../share/share" price="{{price}}"></pay>
+  </view>
+</view>

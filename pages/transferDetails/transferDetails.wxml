@@ -1,0 +1,55 @@
+<view class='container'>
+  <view class='message'>
+    <view class='sm'>
+      <text>授权信息</text>
+      <button bindtap="openAlert">授权详情</button>
+    </view>
+    <view class='con'>
+        <text>授权DNA： 4UEKLHDN</text>
+        <text>授权方：李四</text>
+        <text>获权方：张三</text>
+        <text>时间：2018.5.20</text>
+        <text>长链地址：HDUEYFHFJDBA284KHF62E3RJHDSNC</text>
+    </view>
+  </view>
+  <view style='padding:0 40rpx;box-sizing:border-box;flex:1;'>
+    <text>{{content.title}}</text>
+    <view style='display:flex;justify-content: space-between;align-items: center;'>
+      <view class="weui-media-box__title weui-media-box__title_in-text">
+        <image class='image' src='{{content.img}}'></image>
+        <view class='weui'>
+          <text class='h1'>{{content.name}}</text>
+          <text class='h2'>发布于{{content.time}}前</text>
+        </view>
+      </view>
+      <view class='weui center'>
+        <image class='img' src='../../images/about/u1339.png'></image>
+        <text class='h2'>文章已被区块认证</text>
+      </view>
+    </view>
+    <scroll-view scroll-y style='font-size:30rpx;height:353rpx;'>{{content.content}}</scroll-view>
+  </view>
+  <view class='foot'>
+    <text>以太坊</text>
+    <text>新闻</text>
+  </view>
+  <!--屏幕背景变暗的背景 -->
+  <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+  <!--弹出框 -->
+  <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+    <text class='clost' bindtap="hideModal">x</text>
+    <view>
+      <text class='h1'>
+        认证信息
+      </text>
+      <scroll-view scroll-y="true" class='scroll'>
+        <text class='h5'>完整原本DNA</text>
+        <text class='h2'>4FUATUSHZII9BOOTUFYI6WO1NTYIQZJG9PAYBDYMKIXZ9UW2ET</text>
+        <text class='h5'>授权HASH</text>
+        <text class='h2'>4FUATUSHZII9BOOTUFYI6WO1NTYIQZJG9PAYBDYMKIXZ9UW2ET</text>
+        <text class='h5'>授权HASH</text>
+        <text class='h2'>dDd6uoIemOJxC8lyUg+7wJl2V8yMYKIaSnOeIpB+P3V1jFVzLmRsSYBUkztDTLG1myfVKT/eXA3F73NYBmWYHQrOJcc35a5v4mYBAT9JwRbamh+llK6vFMpnizZ+pPPON46GNRKuLxaNasB4LY9jIGAvdPW6Q6C3/FXmRSyIN+3i7B5ROMlFD2uWB3ZEgjMomdy8pWpSeql6AMbefSpfhKgHbVK+</text>
+      </scroll-view>
+    </view>
+  </view>
+</view>

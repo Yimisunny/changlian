@@ -1,0 +1,87 @@
+<view class='sel'>
+  <view>
+    <navigator url='../Modify/Modify' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg enter">
+        <image class="weui-media-box__thumb" src="../../images/transaction/changepas.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">修改登录密码</view>
+      </view>
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg img">
+        <image class="weui-media-box__thumb" src="../../images/content/right.png" />
+      </view>
+    </navigator>
+    <navigator url='../transactionPass/transactionPass' bindtap='nav' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg enter">
+        <image class="weui-media-box__thumb" src="../../images/transaction/changepas2.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">修改交易密码</view>
+      </view>
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg img">
+        <image class="weui-media-box__thumb" src="../../images/content/right.png" />
+      </view>
+    </navigator>
+  </view>
+  <view class='con'>
+    <navigator url="../invite/invite" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg enter">
+        <image class="weui-media-box__thumb" src="../../images/transaction/person.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">邀请好友</view>
+      </view>
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg img">
+        <image class="weui-media-box__thumb" src="../../images/content/right.png" />
+      </view>
+    </navigator>
+  </view>
+  <view class='con'>
+    <navigator url='../about/about' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg enter">
+        <image class="weui-media-box__thumb" src="../../images/transaction/person.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">关于我们</view>
+      </view>
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg img">
+        <image class="weui-media-box__thumb" src="../../images/content/right.png" />
+      </view>
+    </navigator>
+    <navigator url='../Feedback/Feedback' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg enter">
+        <image class="weui-media-box__thumb" src="../../images/transaction/ways.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">意见反馈</view>
+      </view>
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg img">
+        <image class="weui-media-box__thumb" src="../../images/content/right.png" />
+      </view>
+    </navigator>
+    <navigator url='../useHelp/useHelp' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg enter">
+        <image class="weui-media-box__thumb" src="../../images/transaction/help.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">使用帮助</view>
+      </view>
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg img">
+        <image class="weui-media-box__thumb" src="../../images/content/right.png" />
+      </view>
+    </navigator>
+  </view>
+  <view class='con'>
+    <view bindtap='back' class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg enter">
+        <image class="weui-media-box__thumb" src="../../images/transaction/logout.png" />
+      </view>
+      <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+        <view class="weui-media-box__title">退出登录</view>
+      </view>
+      <view class="weui-media-box__hd weui-media-box__hd_in-appmsg img">
+        <image class="weui-media-box__thumb" src="../../images/content/right.png" />
+      </view>
+    </view>
+  </view>
+</view>

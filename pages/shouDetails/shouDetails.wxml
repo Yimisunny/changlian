@@ -1,0 +1,39 @@
+<view class='container' style='background:#eee;'>
+  <view class='top'>
+    <view class='tit'>
+      <text class='thread'></text>
+      <text>授权文章</text>
+    </view>
+    <view bindtap='jin'>
+      <text class='title'>{{options.title}}</text>
+      <text class='weui-media-box__desc'>{{options.content}}</text>
+      <text style='width:100%;text-align:right;color:#ccc;font-size:35rpx;display:block;'>发布于{{options.time}}前</text>
+    </view>
+  </view>
+  <view class='bottom'>
+    <view class='tit'>
+      <text class='thread'></text>
+      <text>授权机构/个人</text>
+    </view>
+    <scroll-view class='uls' scroll-y>
+      <view class='ul'>
+        <view class='li'>
+          <text>新华社</text>
+          <text>2018.6.22</text>
+        </view>
+        <view class='li'>
+          <text>新华社</text>
+          <text>2018.6.22</text>
+        </view>
+        <view class='li'>
+          <text>新华社</text>
+          <text>2018.6.22</text>
+        </view>
+        <view class='li'>
+          <text>新华社</text>
+          <text>2018.6.22</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

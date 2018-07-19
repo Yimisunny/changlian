@@ -1,0 +1,10 @@
+<view class='container' style='background:#eee;'>
+  <view class='sel'>
+    <view id='code'>
+      <canvas class='canvas' canvas-id='canvas'></canvas>
+    </view>
+    <text class='howl'>{{bowl}}</text>
+    <text class='address'>{{address}}</text>
+    <button class='duplicate' bindtap="openToast">复制地址</button>
+  </view>
+</view>

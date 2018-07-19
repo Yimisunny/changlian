@@ -1,0 +1,13 @@
+<view class='sle'>
+  <view class='nav'><navigator class='navi' url='../rule/rule'>活动规则</navigator></view>
+  <view class='h1'>
+    长链钱包空投10W LTC
+  </view>
+  <view class='h2'>
+    呼朋唤友来瓜分
+  </view>
+  <view class='imgs'>
+    <image class='img' src='../../images/about/u1339.png'></image>
+  </view>
+  <button class='btn' bindtap='share'>分享邀请码</button>
+</view> 

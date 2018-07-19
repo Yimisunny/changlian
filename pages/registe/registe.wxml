@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='tit'>
+    <text class='h1'>注册</text>
+  </view>
+  <view class='main'>
+    <view class="weui-cells weui-cells_after-title" style='padding:20rpx 30rpx; margin-top:40rpx;'>
+      <view class="weui-cell weui-cell_select" style='display:flex;justify-content: space-between;font-size:35rpx;color:#ccc;'>
+        <text>手机号归属地</text>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <text type="default">{{sel}} ▼</text>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell weui-cell_select">
+        <view class="weui-cell__hd" style="width: 90px">
+          <picker bindchange="bindCountryCodeChange" value="{{countryCodeIndex}}" range="{{countryCodes}}">
+            <view class="weui-select">{{countryCodes[countryCodeIndex]}}</view>
+          </picker>
+        </view>
+        <input class="weui-input" placeholder="请输入手机号" name="{{account.num}}"/>
+      </view>
+    </view> 
+    <button class='btn' bindtap='enter'>获取验证码</button>
+    <navigator class='forget' url="../index/index">已有账号，去登陆</navigator>
+  </view>
+  <view style='color:#ccc;font-size:30rpx;padding-bottom:200rpx;box-sizing:border-box;'>
+    <checkbox-group bindchange="bindAgreeChange">
+      <label class="weui-agree" for="weuiAgree">
+        <view class="weui-agree__text">
+          <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+          <view class="weui-agree__checkbox-icon">
+              <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+          </view>
+          注册代表阅读并同意<navigator url="" class="weui-agree__link">《xxxxxxx用户协议》</navigator>
+        </view>
+      </label>
+    </checkbox-group>
+  </view>
+</view>

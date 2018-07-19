@@ -1,0 +1,18 @@
+.container{
+  border-top: 1px solid #eee;
+}
+.logobox text{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: block;
+}
+.weui-footer{
+    margin-bottom: 17px;
+}
+
+.img{
+  width: 230rpx;
+  height: 270rpx;
+  margin-top: 68rpx;
+}

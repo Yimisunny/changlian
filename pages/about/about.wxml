@@ -1,0 +1,12 @@
+<view class='container'>
+  <view class="logobox" style="width:236rpx">
+    <image src='../../images/about/logo.png' class='img'></image>
+    <text>长链钱包</text>
+  </view>
+ <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+      <text class="weui-footer__link">版本号1.0</text>
+    </view>
+    <view class="weui-footer__text">Copyright © 2008-2016 weui.io</view>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我原创的内容",
+  "usingComponents": {
+    "content": "../../components/content/content"
+  }
+}

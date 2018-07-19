@@ -1,0 +1,19 @@
+<view class="code">
+  <view class="input-content-wrap">
+    <view catchtap="set_Focus" class="input-code-wrap">
+        <view class="{{length==1||length==0?'input':'input_none'}}">
+        <text>{{code[0]}}</text>
+      </view> 
+      <view class="{{length==2?'input':'input_none'}}">
+        <text>{{code[1]}}</text>
+      </view>
+      <view class="{{length==3?'input':'input_none'}}">
+        <text>{{code[2]}}</text>
+      </view>
+      <view class="{{length==4?'input':'input_none'}}">
+        <text>{{code[3]}}</text>
+      </view> 
+    </view>
+  </view>
+  <input bindinput="get_code" class="input-content" type="number" focus="{{code_isFocus}}" maxlength="4" />
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "发糖包",
+  "usingComponents": {
+    "pay": "../../components/payt/payt"
+  }
+}

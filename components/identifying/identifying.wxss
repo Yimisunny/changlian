@@ -1,0 +1,88 @@
+/* 新验证码输入框样式 */
+.input-content-wrap .input-code-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center1;
+  height: 150rpx;
+}
+.input-content-wrap .input-code-wrap .code_dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 124rpx;
+  height: 150rpx;
+  border: #dfdfdf solid 1rpx;
+  border-left: none 0;
+  font-size: 60rpx;
+}
+.input-content-wrap .input-code-wrap .code_dot:nth-child(1) {
+  border-left: 2rpx solid #ddd;
+}
+.input-content-wrap .input-code-wrap .code_dot i {
+  /* background: #000; */
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.input-content {
+  position: absolute;
+  opacity: 0;
+  left: -100%;
+  top: 600rpx;
+  background: #f56;
+  z-index: -999;
+  text-align: center;
+}
+.input-content.active {
+  z-index: -99;
+}
+.input {
+  height: 120rpx;
+  width: 124rpx;
+	flex: 1;
+  background-color: #fff;
+  color: #262626;
+  font-size: 60rpx;
+	margin: 0 42rpx 0 42rpx;
+	border: 1rpx #4287ff solid;
+	position: relative;
+}
+.input_none{
+  height: 120rpx;
+  width: 124rpx;
+	flex: 1;
+  background-color: #fff;
+  color: #262626;
+  font-size: 64rpx;
+	margin: 0 42rpx 0 42rpx;
+	border: 1rpx #dfdfdf solid;
+	position: relative;
+}
+.input text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.input_none text {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}

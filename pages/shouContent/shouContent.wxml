@@ -1,0 +1,3 @@
+<view class="container" style='background:#eee;padding-top:20rpx;box-sizing:border-box;'>
+  <content content="{{content}}" url="../shouDetails/shouDetails"></content>
+</view>

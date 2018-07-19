@@ -1,0 +1,19 @@
+<view class='sel'>
+  <view class='box' wx:if="{{bool}}">
+    <view class="inputbox">
+      <input type='text' placeholder='邮箱'/>
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="请描述您遇到的问题以便我们提供更好的帮助"/>
+          </view>
+        </view>
+      </view>
+    </view>
+    <button class='btn' bindtap='submit'>提交</button>
+  </view>
+  <view class='sel' wx:else>
+    <text style=' display: block'>您的意见已提交，感谢您的反馈！</text>
+    <text class='h6'><text style='color:blue;text-decoration: underline;'>{{time}}S</text>后系统将自动回到设置页面</text>
+  </view>
+</view>

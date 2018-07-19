@@ -1,0 +1,66 @@
+.sel{
+  width: 100%;
+  height:100%;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+.h1{
+  font-size: 50rpx;
+  font-weight: bold;
+  margin-top: 40rpx;
+}
+.h4{
+  font-size: 30rpx;
+  color: #ccc;
+  margin-top: 40rpx;
+}
+verifycode{
+  margin-top: 80rpx;
+  display: block;
+}
+.btn{
+  width: 90%;
+  margin-top: 100rpx;
+  background: blue;
+  color: #fff;
+  background:linear-gradient(to left,#f75523,orange);
+}
+/* 新验证码输入框样式 */
+.wallets-password .input-content-wrap .input-password-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150rpx;
+}
+.wallets-password .input-content-wrap .input-password-wrap .password_dot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;
+  box-sizing: border-box;
+  width: 90rpx;
+  height: 90rpx;
+  border: 2rpx solid #ddd;
+  border-left: none 0;
+}
+.wallets-password .input-content-wrap .input-password-wrap .password_dot:nth-child(1) {
+  border-left: 2rpx solid #ddd;
+}
+.wallets-password .input-content-wrap .input-password-wrap .password_dot i {
+  background: #000;
+  border-radius: 50%;
+  width: 20rpx;
+  height: 20rpx;
+}
+.wallets-password .input-content {
+  position: absolute;
+  opacity: 0;
+  left: -100%;
+  top: 600rpx;
+  background: #f56;
+  z-index: -999;
+}
+.wallets-password .input-content.active {
+  z-index: -99;
+}
