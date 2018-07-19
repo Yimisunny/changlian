@@ -23,7 +23,7 @@
       </view>
     </view> 
     <button class='btn' bindtap='enter'>获取验证码</button>
-    <navigator class='forget' url="../index/index">已有账号，去登陆</navigator>
+    <navigator class='forget' url="../index/index">已有账号，去登录</navigator>
   </view>
   <view style='color:#ccc;font-size:30rpx;padding-bottom:200rpx;box-sizing:border-box;'>
     <checkbox-group bindchange="bindAgreeChange">

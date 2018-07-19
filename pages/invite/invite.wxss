@@ -39,7 +39,7 @@
   width: 60%;
   height:120rpx;
   line-height: 120rpx;
-  background: blue;
+  background: linear-gradient(to left,orangered,orange);
   color: #fff;
   border-radius: 120rpx;
 }

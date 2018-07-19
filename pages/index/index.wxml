@@ -17,10 +17,11 @@
     <view class="weui-cells weui-cells_after-title" style='padding:20rpx 30rpx; margin-top:40rpx;'>
       <view class="weui-cell weui-cell_select">
         <input type='password' placeholder='请输入密码' name="{{account.password}}"/>
+        <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo"></button>
       </view>
     </view>
     <navigator class='forget' url='../shou/shou'>忘记密码？</navigator>
-    <button class='btn' bindtap='enter'>下一步</button>
+    <button class='btn' lang="zh_CN" open-type="getUserInfo" bindgetuserinfo='enter'>登录</button>
     <navigator class='forget' url='../registe/registe'>尚无账号，去注册</navigator>
   </view>
 </view>

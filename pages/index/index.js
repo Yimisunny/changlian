@@ -25,16 +25,16 @@ Page({
         }
       }
     })
-    wx.login({
-      success: function (res) {
-        wx.getUserInfo({
-          withCredentials:true,
-          success:function(res){
-            // console.log(res)
-          }
-        })
-      }
-    })
+    //wx.login({
+    //  success: function (res) {
+    //    wx.getUserInfo({
+    //      withCredentials:true,
+    //      success:function(res){
+    //        // console.log(res)
+    //      }
+    //    })
+    //  }
+    //})
   },
   //手机号
   bindCountryCodeChange: function (e) {
@@ -49,16 +49,20 @@ Page({
       if (!myreg.test(this.data.account.num)){
         wx.showToast({
           title: '手机号有误！',
-          icon: 'success',
-          duration: 1500
+          image: '../../images/accet/close-circle.png',
+          duration: 1600
         })
         return false;
       } else{
-        app.globalData.num = this.data.account.num
+        app.globalData.num = this.data.account.num;
+        console.log(e.detail.errMsg)
+        console.log(e.detail.userInfo)
+        console.log(e.detail.rawData)
         wx.request({
           url: 'http://47.96.77.123:8080/html/user/getAccount?openId=' + this.data.account.num,
           success: function (res) {
-            app.globalData.username = res.data.data
+            app.globalData.username = res.data.data;
+            
             wx.switchTab({
               url: '../property/property'
             })
@@ -67,9 +71,9 @@ Page({
       }
     } else{
       wx.showToast({
-        title: '输入的手机号为空',
-        icon: 'success',
-        duration: 1500
+        title: '请输入手机号',
+        image: '../../images/accet/close-circle.png',
+        duration: 1600
       })
       return false;
     }
